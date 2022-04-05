@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,11 +104,7 @@ height:4rem;
 width:7rem;
 
 }
-top{
 
-
-
-}
 body{
 font-family: 'Poppins', sans-serif;
 font-weight:bold;
@@ -147,20 +144,20 @@ X-Turbo Private
 
 
 
-<a class="click" href="https://www.google.com">
+<a class="click" href="http://www.google.com">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdI32QusO_DU9MxZv_q6QqeRR-ZyNVSEVhL4nIUEBLaEKNw6O5" class="im"></img>
 </a>
 
-<a href="https://www.facebook.com">
+<a href="http://www.facebook.com">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfm-l22GylncI2vlqhqCR10rbQ2kwlgycqPo4JoqATPsFXurHg" class="im"></img>
 </a>
 
 
-<a href="https://www.youtube.com">
+<a href="http://www.youtube.com">
 <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png" class="im"></img>
 </a>
 
-<a href="https://www.instagram.com">
+<a href="http://www.instagram.com">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbQWyLqJ_IToTuVZmS3u8-8UuSVxM2R8UKNLozJyStk3sC7Zh6"class="im"></img>
 </a>
 
@@ -177,16 +174,16 @@ X-Turbo Private
 
 
 
-<a class="click" href="https://www.amazon.com">
+<a class="click" href="http://www.amazon.com">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdFbuo2Ew5Iux6Ure_6ucPZb-rXwR3jra-TQKqhoIm4tZE0C26" class="im"></img>
 </a>
 
-<a href="https://www.flipkart.com">
+<a href="http://www.flipkart.com">
 <img src="https://img1a.flixcart.com/www/linchpin/batman-returns/amp//cbb3574d.png" class="im"></img>
 </a>
 
 
-<a href="https://www.pintrest.com">
+<a href="http://www.pintrest.com">
 <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/pinterest-512.png" class="im"></img>
 </a>
 
@@ -208,17 +205,7 @@ X-Turbo Private
 </b>
 </div>
 
-      <div class="w3-card-4  w3-round-xlarge">
-      <b><h4 class="w3-margin w3-padding"><b>Today's Tech News </h4></b>
-        <div class="mar "id="tech">
-        </div>
- </b></div>
-      
-      
-      <div class="w3-card-4  w3-round-xlarge">
-      <b><h4 class="w3-margin w3-padding"><b>Today's Latest News </h4></b>
-      <div class="mar "id="profile1">
-       </div>
+
        
 <script  src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
@@ -226,113 +213,9 @@ X-Turbo Private
   
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <!-- <script src="js/main.js"></script>-->
- <script>
-$(document).ready(function(){
-   // $("#Search").keyup(function(e){
-//var num=e.target.value;
-//console.log(num);
-$.ajax({
-
- url:'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=8f9671ab749047e999f8a1f7226d9d3a',
-
-}).done(function(data){
-   console.log(data);
-for(var i=0;i<data.articles.length;i++){
-   $('#profile1').append(`
-   
-<div class=" w3-card-4 w3-round-xlarge w3-leftbar w3-border-green w3-rightbar w3-white w3-bar w3-bar-left w3-padding">
-
-   <img class=" w3-right img6  " src="${data.articles[i].urlToImage}">
-
-<a href="http://www.bbc.com/news/world " class="  w3-text-black  wpanel-title"><h6><b>${data.articles[i].title}</h6></a>
 
 
 
-
-
-
-</div>
-         </br>
-       `);
-
-
-   }
-  });    
- 
-});
- </script>
-
- <script>
- $(document).ready(function(){
-   // $("#Search").keyup(function(e){
- //var num=e.target.value;
- //console.log(num);
- $.ajax({
- 
- url:'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8f9671ab749047e999f8a1f7226d9d3a',
- 
- }).done(function(data){
-   console.log(data);
- for(var i=0;i<data.articles.length;i++){
-   $('#tech').append(`
-   
- <div class=" w3-card-4 w3-round-xlarge w3-leftbar w3-border-green w3-rightbar w3-white w3-bar w3-bar-left w3-padding">
- 
-   <img class=" w3-right img6  " src="${data.articles[i].urlToImage}">
- 
- <a href="http://www.bbc.com/news/world " class="  w3-text-black  wpanel-title"><h6><b>${data.articles[i].title}</h6></a>
- 
- 
- 
- 
- 
- 
- </div>
-         </br>
-       `);
- 
- 
-   }
-  });    
- 
- });
- </script>
-
-<script>
-$(document).ready(function(){
-  // $("#Search").keyup(function(e){
-//var num=e.target.value;
-//console.log(num);
-$.ajax({
-
-url:'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8f9671ab749047e999f8a1f7226d9d3a',
-
-}).done(function(data){
-  console.log(data);
-for(var i=0;i<data.articles.length;i++){
-  $('#profile1').append(`
-  
-<div class=" w3-card-4 w3-round-xlarge w3-leftbar w3-border-green w3-rightbar w3-white w3-bar w3-bar-left w3-padding">
-
-  <img class=" w3-right img6  " src="${data.articles[i].urlToImage}">
-
-<a href="http://www.bbc.com/news/world " class="  w3-text-black  wpanel-title"><h6><b>${data.articles[i].title}</h6></a>
-
-
-
-
-
-
-</div>
-        </br>
-      `);
-
-
-  }
- });    
-
-});
-</script>
 
 </body>
 </html>
